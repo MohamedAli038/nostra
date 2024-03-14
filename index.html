@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Nostra</title>
+</head>
+
+<body>
+    <!--Signup box-->
+    <div class="signup relative" id="signup">
+        <p class="font-bold md:font-bold md:text-lg">Sign Up and GET 20% OFF for your First Order</p>
+        <p  class="cursor-pointer" id="closebutton">X</p>
+    </div>
+
+    <!--NavBar-->
+    <div class="navbar sticky top-0 bg-white z-20">
+        <div class="title">
+            <h1>Nostra</h1>
+        </div>
+
+        <ul class="flex gap-5 text-gray-600 hidden md:flex">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="#">New Arrival</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="#">Most wanted</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="collection.html">Collections</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contactus.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6 md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+
+    </div>
+
+    <!--Side navbar-->
+    <section id="sidenav" class="bg-black fixed z-20 top-0 transition-all duration-1000" style="width:50%; height:100vh; left: -50%;">
+    <div class="text-right text-gray-600 p-5">
+        <p id="closenav" class="inline cursor-pointer">X</p>
+    </div>
+        <ul class="flex flex-col gap-10 items-center text-gray-600 md:flex">
+        <li>
+            <a class="hover:underline hover:text-white" href="index.html">Home</a>
+        </li>
+        <li>
+            <a class="hover:underline hover:text-white" href="#">New Arrival</a>
+        </li>
+        <li>
+            <a class="hover:underline hover:text-white" href="#">Most wanted</a>
+        </li>
+        <li>
+            <a class="hover:underline hover:text-white" href="collection.html">Collections</a>
+        </li>
+        <li>
+            <a class="hover:underline hover:text-white" href="#">Contact Us</a>
+        </li>
+    </ul>
+</section>
+
+
+    <!--Image slider-->
+    <div class="slider">
+        <div class="slides">
+            <img class="slide h-900px" src="./images/slider-one.jpg">
+            <img id="image2" class="slide h-900px  inset-0 bg-black opacity-50" src="./images/displayimagealter2.jpg">
+           
+            <div class="imagetext">
+                <h1 class="md:text-2xl">Level up your style with our</h1>
+                <p>Summer Collections</p>
+                <input class="shopnowbox" type="submit" value="Shop Now →">
+
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094</button>
+            <button class="next" onclick="nextSlide()">&#10095</button>
+        </div>
+    </div>
+
+
+
+    <!--Brands-->
+    <div class="brands mt-7">
+        <h1>Brands</h1>
+        <div class="imagessection">
+            <div class="images">
+                <img class="brandimg" src="./images/puma2.png" alt="image">
+                <p>Puma</p>
+            </div>
+
+
+            <div class="images">
+                <img class="brandimg" src="./images/brand2.png" alt="image">
+                <p>Behance</p>
+            </div>
+
+            <div class="images">
+                <img class="brandimg" src="./images/brand3.png" alt="image">
+                <p>Adidas</p>
+            </div>
+
+
+            <div class="images">
+                <img class="brandimg" src="./images/brand4.png" alt="image">
+                <p>Simple</p>
+            </div>
+
+
+            <div class="images">
+                <img class="brandimg" src="./images/brand5.png" alt="image">
+                <p>Leaves</p>
+            </div>
+
+
+            <div class="images">
+                <img class="brandimg" src="./images/brand6.png" alt="image">
+                <p>Twitch</p>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+    <!--Customer Experience-->
+    <div class="customerexp mt-7">
+        <div class="exp1">
+            We Provide The Best Customer Experiences
+        </div>
+        <div class="exp2">
+            <p>We ensure that our customer have the best shopping experience</p>
+        </div>
+    </div>
+
+    <!--Promise-->
+    <div class="guarantee">
+        <div class="guaranteebox">
+            <img src="./images/check-mark.png">
+            <p class="font-bold mt-2">Original Products</p>
+
+            <p>
+
+                Unwavering commitment to authentic, innovative, original products."</p>
+
+        </div>
+
+        <div class="guaranteebox">
+            <img src="./images/happiness.png">
+            <p class="font-bold mt-2">Satisfaction Guarantee</p>
+
+            <p>
+
+                Experience peace of mind with our satisfaction guarantee.</p>
+
+        </div>
+
+        <div class="guaranteebox">
+            <img src="./images/shopping-bag.png">
+            <p class="font-bold mt-2">New Arrival Everyday</p>
+
+            <p>
+
+                Discover fresh arrivals daily for an ever-evolving selection.</p>
+
+        </div>
+
+        <div class="guaranteebox">
+            <img src="./images/delivery.png">
+            <p class="font-bold mt-2">Fast & Free Shipping</p>
+
+            <p>
+
+                Enjoy swift and complimentary shipping on all orders.</p>
+
+        </div>
+
+
+    </div>
+    </div>
+
+    <!--New-Arrivals-->
+
+    <div class="newarrivalparent mt-7">
+        <h1 class="font-bold">New Arrivals</h1>
+        <div class="new-arrivals">
+            <div class="imgbox">
+                <img style="width: 20vw;" src="./images/arrival1.jpg">
+                <input type="submit" value="Shop Now →" class="shopnowbox2">
+
+            </div>
+
+            <div class="imgbox">
+                <img style="width: 20vw;" src="./images/arrival2.jpg">
+                <input type="submit" value="Shop Now →" class="shopnowbox2">
+            </div>
+
+            <div class="imgbox">
+                <img style="width: 20vw;" src="./images/arrival3.jpg">
+                <input type="submit" value="Shop Now →" class="shopnowbox2">
+            </div>
+
+            <div class="imgbox">
+                <img style="width: 20vw;" src="./images/arrival4.jpg">
+                <input type="submit" value="Shop Now →" class="shopnowbox2">
+            </div>
+        </div>
+    </div>
+    <!--Most Wanted-->
+    <div class="mostwanted mt-5">
+        <h1 class="font-bold">Most Wanted</h1>
+        <div class="wantedcontainer">
+            <div class="wantedbox">
+                <img class="mainimage" src="./images/wanted3.jpg">
+                <img class="overlayimage" src="./images/heart.png">
+                <p class="overlaytext">sale</p>
+            </div>
+
+            <div class="wantedbox">
+                <img class="mainimage" src="./images/wanted1.jpg">
+                <img class="overlayimage" src="./images/heart.png">
+                <p class="overlaytext">sale</p>
+            </div>
+
+            <div class="wantedbox">
+                <img class="mainimage" src="./images/wanted5.jpg">
+                <img class="overlayimage" src="./images/heart.png">
+                <p class="overlaytext">sale</p>
+            </div>
+
+            <div class="wantedbox">
+                <img class="mainimage" src="./images/wanted6.jpg">
+                <img class="overlayimage" src="./images/heart.png">
+                <p class="overlaytext">sale</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Limited Offer-->
+    <div class="limitedoffer ml-1 mr-1 mt-10">
+        <div class="limitedofferbox">
+            <div class="limitedsection-1">
+                <img class="offerimage" src="./images/displayimage1.jpg">
+            </div>
+            <div class="limitedsection-2">
+                <p class="offertext">Limited Offer 38% OFF for the first 30 customers</p>
+                <input type="submit" value="Shop Now →" class="shopnowbox3 rounded-lg">
+            </div>
+        </div>
+    </div>
+
+
+   
+    <!--News Letter-->
+<section class="text-center">
+    <h1 class="text-3xl font-bold mt-5 text-center">Join our News Letter</h1>
+    <p>Signup for our email newspaper to get exclusive discounts,updates and more</p>
+    <input type="text" class="border border-black p-2 m-3" style="width:80%">
+    <br>
+    <button class="bg-black text-white p-3 m-1 rounded-lg">Subscribe →</button>
+
+</section>
+
+<!--footer-->
+<section class="mt-20 p-10 flex flex-col gap-5" style="background-color: #1D232C;">
+    <h1 class="text-4xl font-bold " style="color:white;">Nostra</h1>
+    <p style="color:white">The timeless essence of Nostra, weaving innovation since the 1500s for those with an insatiable curiosity.</p>
+    <div class="footerimage">
+        <img class="f-image2" src="./images/instagram.png">
+        <img  class="f-image" src="./images/twitter.png">
+        <img  class="f-image1"  src="./images/social.png">
+    </div>
+    <p style="color:white;">@ 2024 Nostra.com </p>
+</section>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

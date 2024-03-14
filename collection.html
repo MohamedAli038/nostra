@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Nostra</title>
+</head>
+
+<body>
+
+      <!--Signup box-->
+      <div class="signup relative" id="signup">
+        <p class="font-bold md:font-bold md:text-lg">Sign Up and GET 20% OFF for your First Order</p>
+        <p  class="cursor-pointer" id="closebutton">X</p>
+    </div>
+
+  
+    <!--NavBar-->
+    <div class="navbar sticky top-0 bg-white z-20">
+        <div class="title">
+            <h1>Nostra</h1>
+        </div>
+
+        <ul class="flex gap-5 text-gray-600 hidden md:flex">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="#">New Arrival</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="#">Most wanted</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="collection.html">Collections</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contactus.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6 md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+
+    </div>
+
+    
+    <!--Side navbar-->
+    <section id="sidenav" class="bg-black fixed z-20 top-0 transition-all duration-1000" style="width:50%; height:100vh; left:-50%;">
+        <div class="text-right text-gray-600 p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+            <ul class="flex flex-col gap-10 items-center text-gray-600 md:flex">
+            <li>
+                <a class="hover:underline hover:text-white" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-white" href="#">New Arrival</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-white" href="#">Most wanted</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-white" href="collection.html">Collections</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-white" href="contactus.html">Contact Us</a>
+            </li>
+        </ul>
+    </section>
+
+    <div class="container p-2">
+        <div class="pr-3  w-32  md:text-2xl md:mr-32">
+            <h1 class="font-bold">Occasion</h1>
+            <input type="checkbox" name="occasion" class="text-xs">Mixed<br>
+            <input type="checkbox" name="occasion" >Party<br>
+            <input type="checkbox" name="occasion" >Beach<br>
+            <br><br>
+            <h1 class="font-bold">Colors</h1>
+            <input type="checkbox" name="colors" >Red<br>
+         
+            <input type="checkbox" name="colors">White<br>
+            <input type="checkbox" name="colors">Green<br>
+         
+            <br><br>
+            <h1 class="font-bold">Arrivals</h1>
+            <input type="checkbox" name="arrivals" >New<br>
+            <input type="checkbox"  name="arrivals" >Old<br>
+
+</div>
+
+        <div class="product-section" style="border-left: 2px solid black;">
+            <div>
+            <input id="search" type="text" placeholder="Search for a product..." class="border border-black rounded-xl p-3 mt-2 ml-4 relative " style="width:98%"></input>
+
+        </div>
+            <section class="p-4 ">
+                <div id="productcontainer" class="grid grid-cols-3 mt-1 gap-10 align-middle md:grid-cols-3 md:mt-1 md:gap-x-28 md:align-middle ">
+                    <div >
+                        <img class="productimage" src="./images/product1.jpg" >
+                        <h1 class="text-sm md:text-3xl">Floral Mixed Summer Shirt</h1>
+                        <p class="text-sm md:text-sm"> ₹200</p>
+                        <tags class="text-sm" style="visibility: hidden;">Summer Mixed New</tags>
+                      
+                    </div>
+            
+                    <div>
+                        <img  class="productimage" src="./images/product2.jpg"  >
+                        <h1 class="text-sm md:text-3xl">Summer Green</h1>
+                        <p class="text-sm"> ₹200</p>
+                        <tags class="text-sm" style="visibility: hidden;">Summer Green New</tags>
+                    </div>
+            
+                    <div>
+                        <img  class="productimage" src="./images/product3.jpg" >
+                        <h1 class="text-sm md:text-3xl">Party Floral Shirt</h1>
+                        <p class="text-sm"> ₹279</p>
+                        <tags class="text-sm" style="visibility: hidden;">Party Mixed Old</tags>
+                    </div>
+            
+                    <div>
+                        <img  class="productimage" src="./images/product4.jpg"  >
+                        <h1 class="text-sm md:text-3xl">Floral Summer Shirt White </h1>
+                        <p class="text-sm"> ₹259</p>
+                        <tags class="text-sm" style="visibility: hidden;">Summer White New</tags>
+                    </div>
+        
+                    <div >
+                        <img  class="productimage" src="./images/product5.jpg" >
+                        <h1 class="text-sm md:text-3xl">Beach Shirt</h1>
+                        <p class="text-sm"> ₹379</p>
+                        <tags class="text-sm" style="visibility: hidden;">Beach Blue New</tags>
+                    </div>
+            
+                    <div>
+                        <img  class="productimage" src="./images/product6.jpg"  >
+                        <h1 class="text-sm md:text-3xl">Shirt Party Red</h1>
+                        <p class="text-sm"> ₹389</p>
+                        <tags class="text-sm" style="visibility: hidden;">Party Red New</tags>
+                    </div>
+            
+                    <div>
+                        <img  class="productimage" src="./images/product7.jpg" >
+                        <h1 class="text-sm md:text-3xl">Party Floral Shirt</h1>
+                        <p class="text-sm"> ₹249</p>
+                        <tags class="text-sm" style="visibility: hidden;">Party Mixed New</tags>
+                    </div>
+            
+                    <div>
+                        <img  class="productimage" src="./images/product8.jpg" >
+                        <h1 class="text-sm md:text-3xl">Shirt Party Red</h1>
+                        <p class="text-sm"> ₹299</p>
+                        <tags class="text-sm" style="visibility: hidden;">Party Red Old</tags>
+                    </div>
+
+                    <div>
+                        <img  class="productimage" src="./images/product9.jpg"  >
+                        <h1 class="text-sm md:text-3xl">Floral Summer Shirt</h1>
+                        <p class="text-sm"> ₹499</p>
+                    </div>
+                </div>
+        
+        
+            </section>
+
+        </div>
+    </div>
+
+
+
+        <!--News Letter-->
+<section class="text-center">
+    <h1 class="text-3xl font-bold mt-5 text-center">Join our News Letter</h1>
+    <p>Signup for our email newspaper to get exclusive discounts,updates and more</p>
+    <input type="text" class="border border-black p-2 m-3" style="width:80%">
+    <br>
+    <button class="bg-black text-white p-3 m-1 rounded-lg">Subscribe →</button>
+
+</section>
+
+    <!--footer-->
+<section class="mt-20 p-10 flex flex-col gap-5" style="background-color: #1D232C;">
+    <h1 class="text-4xl font-bold " style="color:white;">Nostra</h1>
+    <p style="color:white">The timeless essence of Nostra, weaving innovation since the 1500s for those with an insatiable curiosity.</p>
+    <div class="footerimage">
+        <img class="f-image2" src="./images/instagram.png">
+        <img  class="f-image" src="./images/twitter.png">
+        <img  class="f-image1"  src="./images/social.png">
+    </div>
+    <p style="color:white;">@ 2024 Nostra.com </p>
+</section>
+
+
+
+
+<script src="collection.js"></script>
+
+</body>
+
+</html>
